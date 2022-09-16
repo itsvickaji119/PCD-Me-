@@ -1,0 +1,11 @@
+I=imread('a11201911963.jpg');
+hpf1=[-1 -1 -1;-1 8 -1;-1 -1 -1];
+hpf2=[ 0 -1 0;-1 5 -1; 0 -1 0];
+hpf3=[ 1 -2 1;-2 5 -2; 1 -2 1];
+J1=uint8(conv2(double(I),hpf1,'same'));
+J2=uint8(conv2(double(I),hpf2,'same'));
+J3=uint8(conv2(double(I),hpf3,'same'));
+figure,imshow(I);
+figure,imshow(J1);
+figure,imshow(J2);
+figure,imshow(J3);
