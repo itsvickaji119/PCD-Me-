@@ -1,0 +1,5 @@
+%Contras
+clear all;
+clc;
+fi = imread('bahan2.jpg');
+figu
